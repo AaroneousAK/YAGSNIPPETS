@@ -1,0 +1,4 @@
+{{/* adds a variable to output a server's prefix... useful in help responses and command suggestions */}}
+
+{{$getPrefix := exec "prefix"}}
+{{$prefix := slice $getPrefix (sub (len $getPrefix) 2) (sub (len $getPrefix) 1)}}
